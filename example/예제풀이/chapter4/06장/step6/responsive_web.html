@@ -17,11 +17,13 @@
 				var body = $('body');
 				var boxInfo = [];
 				
+				// 박스 30개 생성
 				for(var i=0; i<maxSize; i++){
 					var box = '<div class="box">';
 					body.append(box);
 				}
 				
+				// 박스에 랜덤으로 색과 가로, 세로 크기를 설정
 				var box = $('.box');
 				box.each(function(i){
 					var tg = $(this);
@@ -37,6 +39,7 @@
 					
 					boxInfo.push([]);
 				});
+				
 				
 				$(window).resize(function(){
 					sort();
